@@ -20,76 +20,86 @@ public class Vendedor {
         print("O saldo é de R$ \(self.saldoConta)")
     }
     
+    private func calculaTerno(qtdPecas: Int) {
+       
+        //Custo 400
+       if qtdPecas >= 3 {
+           
+           let desconto = 50.00 * Float(qtdPecas)
+           let valorVenda = (400.00  * Float(qtdPecas) ) - desconto
+           self.saldoConta +=  valorVenda
+           
+           print("Parabéns você ganhou \(desconto) de desconto!!")
+           
+       } else {
+         
+           let valorVenda = (400.00 * Float(qtdPecas))
+           self.saldoConta  = saldoConta + valorVenda
+       }
+        
+    }
+    
+    private func calculaVestido(qtdPecas: Int) {
+        
+        //Custo 900
+        if qtdPecas == 5 {
+             
+           let valorVenda = (900.00 * Float(qtdPecas) - 250.00)
+           self.saldoConta  = saldoConta + valorVenda
+         
+           print("Você acaba de ganhar um véu de brinde!!")
+        
+        } else {
+        
+             let valorVenda = 900.00 * Float(qtdPecas)
+             self.saldoConta  = saldoConta + valorVenda
+        }
+        
+    }
+    
+    private func calculaBone(qtdPecas: Int) {
+        
+        if qtdPecas >= 2 {
+          
+            
+            if qtdPecas % 2 == 0 {
+               
+                let qtdDoada = Float((qtdPecas/2))
+                let valorVenda = Float(qtdPecas) * 50.00
+                self.saldoConta  = saldoConta + valorVenda
+                print("Parabéns você ganhou \(qtdDoada) bonés")
+                
+            } else {
+             
+                let valorVenda = Float(qtdPecas) * 50.00
+                let qtdDoada = (qtdPecas/2)
+              
+                self.saldoConta  = saldoConta + valorVenda
+             
+                print("Parabéns você ganhou \(qtdDoada) bonés")
+                
+            }
+          
+            
+        } else {
+            
+            let valorVenda = 50.00 * Float(qtdPecas)
+            self.saldoConta  = saldoConta + valorVenda
+            
+        }
+        
+    }
+    
     func vender(quantidadeDePecas: Int, tipoDePeca: String) {
         
         if tipoDePeca == "terno" {
-           
-            //Custo 400
-            if quantidadeDePecas >= 3 {
-                
-                let desconto = 50.00 * Float(quantidadeDePecas)
-                let valorVenda = (400.00  * Float(quantidadeDePecas) ) - desconto
-                self.saldoConta +=  valorVenda
-                
-                print("Parabéns você ganhou \(desconto) de desconto!!")
-                
-            } else {
-              
-                let valorVenda = (400.00 * Float(quantidadeDePecas))
-                self.saldoConta  = saldoConta + valorVenda
-            }
-            
-            
+            self.calculaTerno(qtdPecas: quantidadeDePecas)
+      
         } else if tipoDePeca == "vestido" {
-            
-           //Custo 900
-           if quantidadeDePecas == 5 {
-                
-              let valorVenda = (900.00 * Float(quantidadeDePecas) - 250.00)
-              self.saldoConta  = saldoConta + valorVenda
-            
-              print("Você acaba de ganhar um véu de brinde!!")
-           
-           } else {
-           
-                let valorVenda = 900.00 * Float(quantidadeDePecas)
-                self.saldoConta  = saldoConta + valorVenda
-           }
-            
-            
+            self.calculaVestido(qtdPecas: quantidadeDePecas)
+    
         } else {
-           
-                 
-            if quantidadeDePecas >= 2 {
-              
-                
-                if quantidadeDePecas % 2 == 0 {
-                   
-                    let qtdDoada = Float((quantidadeDePecas/2))
-                    let valorVenda = Float(quantidadeDePecas) * 50.00
-                    self.saldoConta  = saldoConta + valorVenda
-                    print("Parabéns você ganhou \(qtdDoada) bonés")
-                    
-                } else {
-                 
-                    let valorVenda = Float(quantidadeDePecas) * 50.00
-                    let qtdDoada = (quantidadeDePecas/2)
-                  
-                    self.saldoConta  = saldoConta + valorVenda
-                 
-                    print("Parabéns você ganhou \(qtdDoada) bonés")
-                    
-                }
-              
-                
-            } else {
-                
-                let valorVenda = 50.00 * Float(quantidadeDePecas)
-                self.saldoConta  = saldoConta + valorVenda
-                
-            }
-            
-            
+            self.calculaBone(qtdPecas: quantidadeDePecas)
         }
         
     }

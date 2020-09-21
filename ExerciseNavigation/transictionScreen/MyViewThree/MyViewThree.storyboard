@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xA9-AY-qnf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Three View Controller-->
+        <scene sceneID="puo-rx-Trg">
+            <objects>
+                <viewController id="xA9-AY-qnf" customClass="MyViewThreeViewController" customModule="transictionScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v9f-xm-TNe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZBM-Aq-ocR">
+                                <rect key="frame" x="16" y="109" width="382" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26l-wS-Ri3">
+                                        <rect key="frame" x="0.0" y="0.0" width="159.5" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Open three modal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionOpen:" destination="xA9-AY-qnf" eventType="touchUpInside" id="Qi4-o4-gvk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvS-tY-xuG">
+                                        <rect key="frame" x="199.5" y="0.0" width="182.5" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Open three pushed">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionOpen:" destination="xA9-AY-qnf" eventType="touchUpInside" id="Ayk-nK-ana"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZBM-Aq-ocR" firstAttribute="leading" secondItem="UkJ-6F-TRR" secondAttribute="leading" constant="16" id="BQS-t5-eRT"/>
+                            <constraint firstItem="UkJ-6F-TRR" firstAttribute="trailing" secondItem="ZBM-Aq-ocR" secondAttribute="trailing" constant="16" id="DN5-VD-f6u"/>
+                            <constraint firstItem="ZBM-Aq-ocR" firstAttribute="top" secondItem="UkJ-6F-TRR" secondAttribute="top" constant="65" id="zFP-rV-sDY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UkJ-6F-TRR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A2m-JW-fZ2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K52-fi-hvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731.8840579710145" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ERW-x2-p7B">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My View Two Pushed View Controller-->
+        <scene sceneID="LPh-S2-xF9">
+            <objects>
+                <viewController id="ERW-x2-p7B" customClass="MyViewTwoPushedViewController" customModule="transictionScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cql-Km-NDS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View two pushed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVX-cs-DPY">
+                                <rect key="frame" x="118" y="109" width="178" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-cU-KIS">
+                                <rect key="frame" x="106" y="157" width="202" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="lL1-yJ-8g8"/>
+                                </constraints>
+                                <state key="normal" title="Fechar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionClose:" destination="ERW-x2-p7B" eventType="touchUpInside" id="fIa-aE-cuq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RRI-cU-KIS" firstAttribute="centerX" secondItem="ieu-WM-w7M" secondAttribute="centerX" id="Bnl-5b-78X"/>
+                            <constraint firstItem="PVX-cs-DPY" firstAttribute="centerX" secondItem="ieu-WM-w7M" secondAttribute="centerX" id="RY0-eH-43e"/>
+                            <constraint firstItem="PVX-cs-DPY" firstAttribute="top" secondItem="ieu-WM-w7M" secondAttribute="top" constant="65" id="U5K-Fp-gS9"/>
+                            <constraint firstItem="RRI-cU-KIS" firstAttribute="top" secondItem="PVX-cs-DPY" secondAttribute="bottom" constant="19" id="ioH-fb-Igf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ieu-WM-w7M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21y-BU-f0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+</document>

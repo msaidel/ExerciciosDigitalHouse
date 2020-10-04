@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="exi-Sl-yr4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Detail View Controller-->
+        <scene sceneID="7sD-D0-fjq">
+            <objects>
+                <viewController id="exi-Sl-yr4" customClass="CarDetailViewController" customModule="collectionViewEx01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VV3-5s-sKg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pws-np-Jaf">
+                                <rect key="frame" x="107" y="353" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="V1m-mC-Igv"/>
+                                    <constraint firstAttribute="width" constant="200" id="xOR-iB-acg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pws-np-Jaf" firstAttribute="centerX" secondItem="7KM-Kb-y2c" secondAttribute="centerX" id="BWT-MD-nPN"/>
+                            <constraint firstItem="Pws-np-Jaf" firstAttribute="centerY" secondItem="7KM-Kb-y2c" secondAttribute="centerY" id="CE7-MM-XRK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7KM-Kb-y2c"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgDetail" destination="Pws-np-Jaf" id="x62-EG-PfE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ep3-38-Asp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="-202"/>
+        </scene>
+    </scenes>
+</document>

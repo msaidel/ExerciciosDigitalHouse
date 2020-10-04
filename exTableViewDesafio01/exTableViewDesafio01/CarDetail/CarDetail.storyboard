@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NTc-kd-hDW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Detail View Controller-->
+        <scene sceneID="wRp-YG-Xx2">
+            <objects>
+                <viewController id="NTc-kd-hDW" customClass="CarDetailViewController" customModule="exTableViewDesafio01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fdQ-5Q-xyb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38h-ww-biu">
+                                <rect key="frame" x="16" y="68" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWt-5F-vgk">
+                                <rect key="frame" x="12" y="68" width="12.5" height="22"/>
+                                <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="tapClose:" destination="NTc-kd-hDW" eventType="touchUpInside" id="QHC-rH-iTt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YWt-5F-vgk" firstAttribute="top" secondItem="wij-26-wBW" secondAttribute="top" constant="24" id="BnK-Q8-zio"/>
+                            <constraint firstItem="YWt-5F-vgk" firstAttribute="leading" secondItem="wij-26-wBW" secondAttribute="leading" constant="12" id="DhK-c4-u9b"/>
+                            <constraint firstItem="wij-26-wBW" firstAttribute="trailing" secondItem="38h-ww-biu" secondAttribute="trailing" constant="16" id="F5K-EU-ea2"/>
+                            <constraint firstItem="38h-ww-biu" firstAttribute="top" secondItem="wij-26-wBW" secondAttribute="top" constant="24" id="Q3Z-zf-Tn0"/>
+                            <constraint firstItem="38h-ww-biu" firstAttribute="leading" secondItem="wij-26-wBW" secondAttribute="leading" constant="16" id="qgz-sY-RlZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wij-26-wBW"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelModel" destination="38h-ww-biu" id="VZe-vT-CFE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNT-SK-weA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

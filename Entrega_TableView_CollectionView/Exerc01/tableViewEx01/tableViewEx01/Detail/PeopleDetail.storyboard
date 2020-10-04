@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pxc-ik-st2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--People Detail View Controller-->
+        <scene sceneID="4yU-HA-Y3Z">
+            <objects>
+                <viewController id="pxc-ik-st2" customClass="PeopleDetailViewController" customModule="tableViewEx01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VbT-fd-D9z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5JI-sb-6xU">
+                                <rect key="frame" x="16" y="68" width="382" height="62.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMK-Uz-3ut">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPR-kb-uct">
+                                        <rect key="frame" x="0.0" y="24.5" width="382" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8of-at-tCL">
+                                        <rect key="frame" x="0.0" y="45.5" width="382" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-GM-K16">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Detalhe " id="SSp-MX-pvY">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" style="plain" id="psH-4c-2P5">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1uv-cr-42V">
+                                                <rect key="frame" x="20" y="11" width="18" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="xmark" catalog="system">
+                                                    <color key="titleColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapClose:" destination="pxc-ik-st2" eventType="touchUpInside" id="fg2-4z-dbh"/>
+                                                </connections>
+                                            </button>
+                                            <color key="tintColor" red="0.039215686270000001" green="0.039215686270000001" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ElH-GM-K16" secondAttribute="trailing" id="NDl-cH-UJZ"/>
+                            <constraint firstItem="5JI-sb-6xU" firstAttribute="top" secondItem="ElH-GM-K16" secondAttribute="bottom" constant="24" id="Q8d-nM-iH0"/>
+                            <constraint firstItem="lxX-PY-O2e" firstAttribute="trailing" secondItem="5JI-sb-6xU" secondAttribute="trailing" constant="16" id="Vtf-7p-Pas"/>
+                            <constraint firstItem="ElH-GM-K16" firstAttribute="top" secondItem="VbT-fd-D9z" secondAttribute="top" id="fN2-zz-7C4"/>
+                            <constraint firstItem="5JI-sb-6xU" firstAttribute="leading" secondItem="lxX-PY-O2e" secondAttribute="leading" constant="16" id="j2e-rd-YTt"/>
+                            <constraint firstItem="ElH-GM-K16" firstAttribute="leading" secondItem="lxX-PY-O2e" secondAttribute="leading" id="wTr-ec-zoP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lxX-PY-O2e"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblEmail" destination="XPR-kb-uct" id="dAw-De-v73"/>
+                        <outlet property="lblName" destination="JMK-Uz-3ut" id="Gzc-8H-KlE"/>
+                        <outlet property="lblOffice" destination="8of-at-tCL" id="ytV-aI-I9r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zd5-xd-EeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

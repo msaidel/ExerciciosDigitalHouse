@@ -9,6 +9,7 @@ Curso promovido pelo Programa Santander Coders.<br/>
 * [Exercício Navigation](https://github.com/msaidel/ExerciciosDigitalHouse/tree/master/ExercicioNavigation)
 * [Exercício Collection e TableView](https://github.com/msaidel/ExerciciosDigitalHouse/tree/master/Entrega_TableView_CollectionView)
 * [Exercício SegmentedControl](https://github.com/msaidel/ExerciciosDigitalHouse/tree/master/ExSegmentedControl)
+* [Desafio Proposto](https://github.com/msaidel/ExerciciosDigitalHouse/tree/master/Desafio_30_10_2020)
 
 
 

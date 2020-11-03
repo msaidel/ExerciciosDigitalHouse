@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w4m-qE-k2G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iBuy-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Desafio_30_10_2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Pesquisar" translatesAutoresizingMaskIntoConstraints="NO" id="WUr-fJ-qFg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <color key="barTintColor" systemColor="systemGray6Color"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="light"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="38" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="dpc-Wo-yVY">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductItemEmptyCell" id="U17-cw-zIr" customClass="ProductItemEmptyCell" customModule="Desafio_30_10_2020" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U17-cw-zIr" id="S3a-cg-pL4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXW-53-NNO">
+                                                    <rect key="frame" x="36" y="11.5" width="342" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mXW-53-NNO" firstAttribute="leading" secondItem="S3a-cg-pL4" secondAttribute="leadingMargin" constant="16" id="78A-WT-oMG"/>
+                                                <constraint firstItem="mXW-53-NNO" firstAttribute="centerY" secondItem="S3a-cg-pL4" secondAttribute="centerY" id="dBr-NG-O2B"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mXW-53-NNO" secondAttribute="trailing" constant="16" id="sRx-Ix-nzi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelTitle" destination="mXW-53-NNO" id="x9j-gY-nlw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductItemCell" id="afj-6O-BpX" customClass="ProductItemCell" customModule="Desafio_30_10_2020" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="afj-6O-BpX" id="tBd-yy-eeX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNH-13-2tS">
+                                                    <rect key="frame" x="36" y="11.5" width="327" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6lU-a6-hYW">
+                                                    <rect key="frame" x="371" y="13.5" width="27" height="17.5"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="27" id="KWF-yx-hcb"/>
+                                                        <constraint firstAttribute="height" constant="21" id="jlg-Sx-k5K"/>
+                                                    </constraints>
+                                                    <imageReference key="image" image="chevron.right" catalog="system" symbolScale="medium"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZNH-13-2tS" firstAttribute="leading" secondItem="tBd-yy-eeX" secondAttribute="leadingMargin" constant="16" id="ClR-uu-4Sm"/>
+                                                <constraint firstItem="ZNH-13-2tS" firstAttribute="centerY" secondItem="tBd-yy-eeX" secondAttribute="centerY" id="Ge2-0E-DAx"/>
+                                                <constraint firstAttribute="trailing" secondItem="6lU-a6-hYW" secondAttribute="trailing" constant="16" id="LIU-uw-Vk6"/>
+                                                <constraint firstItem="6lU-a6-hYW" firstAttribute="centerY" secondItem="tBd-yy-eeX" secondAttribute="centerY" id="QAI-NH-q4g"/>
+                                                <constraint firstItem="6lU-a6-hYW" firstAttribute="leading" secondItem="ZNH-13-2tS" secondAttribute="trailing" constant="8" id="gEr-3o-OVy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelProductName" destination="ZNH-13-2tS" id="3Mi-hB-zSw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dpc-Wo-yVY" secondAttribute="bottom" id="7vM-12-7Bz"/>
+                            <constraint firstItem="dpc-Wo-yVY" firstAttribute="top" secondItem="WUr-fJ-qFg" secondAttribute="bottom" id="Lyc-71-7Jg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpc-Wo-yVY" secondAttribute="trailing" id="Ud5-5Z-Iz8"/>
+                            <constraint firstAttribute="trailing" secondItem="WUr-fJ-qFg" secondAttribute="trailing" id="Xc7-bi-OC1"/>
+                            <constraint firstItem="dpc-Wo-yVY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eDB-Ks-jbc"/>
+                            <constraint firstItem="WUr-fJ-qFg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iZf-g9-qf3"/>
+                            <constraint firstItem="WUr-fJ-qFg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zHh-ud-an3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="iBuy" largeTitleDisplayMode="never" id="InW-GK-H9X">
+                        <barButtonItem key="rightBarButtonItem" id="gLX-td-RYz">
+                            <imageReference key="image" image="plus" catalog="system" symbolScale="medium"/>
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tapAdd:" destination="BYZ-38-t0r" id="USF-0f-PaG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="WUr-fJ-qFg" id="0mg-MS-3yg"/>
+                        <outlet property="tableView" destination="dpc-Wo-yVY" id="dLe-An-u6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.913043478261" y="88.392857142857139"/>
+        </scene>
+        <!--Lista de Compras-->
+        <scene sceneID="Bor-yA-tSl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6wz-Kp-jXl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lista de Compras" image="star.fill" selectedImage="star.fill" catalog="system" id="XlB-6z-Ckv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JMl-Qd-2A0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ygh-QW-nRS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zid-xi-N8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863.768115942029" y="88.392857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ILl-Mm-9SS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="w4m-qE-k2G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lc1-DD-9oa">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6wz-Kp-jXl" kind="relationship" relationship="viewControllers" id="mQg-P1-2pn"/>
+                        <segue destination="daz-iq-5ic" kind="relationship" relationship="viewControllers" id="I8O-f9-Ks5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPe-IX-WYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46.376811594202906" y="88.392857142857139"/>
+        </scene>
+        <!--Configuration-->
+        <scene sceneID="HQC-OF-r8e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Configuration" id="daz-iq-5ic" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Configurações" image="star.fill" catalog="system" selectedImage="star.fill" id="viR-Xa-FVP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHE-lG-3RU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="480"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="star.fill" width="128" height="128"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
